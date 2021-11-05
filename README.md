@@ -1,29 +1,35 @@
-# Go Gin App Example Skeleton
+Golang Gin blog app
+===
 
-An example of gin contains many useful features
+An developing blog from a skeleton
 
+Installation
+---
 
-## Installation
+```bash
+~$ go get github.com/jaccyli/golang-gin-app
 ```
-$ go get github.com/baturorkun/go-gin-app
-```
 
-## How to run
+How to run
+---
 
-### Required
+Required
+---
 
 - Mysql
 - Redis
 
-### Ready
+Ready
+---
 
 Create a **blog database** and import ( /docs/sql/db.sql )
 
-### Conf
+Conf
+---
 
 You should modify `conf/app.ini`
 
-```
+```ini
 [database]
 Type = mysql
 User = root
@@ -41,24 +47,29 @@ IdleTimeout = 200
 ...
 ```
 
-### Run
-```
-$ cd $GOPATH/src/go-gin-app
+Run
+---
 
-$ go run main.go 
+```bash
+~$ cd /your/own/path/golang-gin-app
+
+~$ go run main.go 
 ```
 
-### Docker Run
-```
-$ docker-compose up
+Docker Run
+---
+
+```bash
+~$ docker-compose up
 
 Adminer Database Tool : http://localhost:8080
 
 ```
 
 Project information and existing API
+---
 
-```
+```ini
 [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
  - using env:	export GIN_MODE=release
  - using code:	gin.SetMode(gin.ReleaseMode)
@@ -79,7 +90,8 @@ Listening port is 8000
 Actual pid is 4393
 ```
 
-## Features
+Features
+---
 
 - RESTful API
 - Gorm
@@ -92,6 +104,7 @@ Actual pid is 4393
 - Cron
 - Redis
 
-### Resources
+Resources
+---
 
-partial forked from EDDYCJY/go-gin-example
+partial forked from baturorkun/go-gin-app
