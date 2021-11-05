@@ -71,8 +71,8 @@ Project information and existing API
 
 ```ini
 [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
- - using env:	export GIN_MODE=release
- - using code:	gin.SetMode(gin.ReleaseMode)
+ - using env: export GIN_MODE=release
+ - using code: gin.SetMode(gin.ReleaseMode)
 
 [GIN-debug] GET    /auth                     --> github.com/baturorkun/go-gin-app/routers/api.GetAuth (3 handlers)
 [GIN-debug] GET    /swagger/*any             --> github.com/baturorkun/go-gin-app/vendor/github.com/swaggo/gin-swagger.WrapHandler.func1 (3 handlers)
