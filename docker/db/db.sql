@@ -6,8 +6,9 @@ Type           : MYSQL
 SET FOREIGN_KEY_CHECKS=0;
 
 CREATE DATABASE IF NOT EXISTS blog CHARACTER SET utf8;
-CREATE USER 'blog_usr'@'%' IDENTIFIED BY 'blog_usr';
-GRANT ALL PRIVILEGES ON accounting.* TO 'blog_usr'@'%';
+CREATE USER 'suosuoli'@'%' IDENTIFIED BY 'suosuoli';
+GRANT ALL PRIVILEGES ON accounting.* TO 'suosuoli'@'%';
+GRANT ALL PRIVILEGES ON blog.* TO 'suosuoli'@'%';
 FLUSH PRIVILEGES;
 
 
